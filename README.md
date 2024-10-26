@@ -4,16 +4,9 @@
 
 You need to have Deno v2.0.0 or later installed to run this repo.
 
-Start a dev server:
-
 ```
-$ deno task dev
+deno install
+deno task d
 ```
 
-## Deploy
-
-Build production assets:
-
-```
-$ deno task build
-```
+The click "Insert pages" or "Get pages" you should see errors in console.
