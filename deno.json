@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "d": "deno run -A --node-modules-dir npm:vinxi dev",
+    "dev": "deno run -A --node-modules-dir npm:vite",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
+  },
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "solid-js"
+  },
+  "imports": {
+    "@db/sqlite": "jsr:@db/sqlite@^0.12.0",
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
+    "@soapbox/kysely-deno-sqlite": "jsr:@soapbox/kysely-deno-sqlite@^2.2.0",
+    "@solidjs/start": "npm:@solidjs/start@^1.0.9",
+    "kysely": "npm:kysely@^0.27.4",
+    "solid-js": "npm:solid-js@^1.9.2",
+    "vite": "npm:vite@^5.4.9",
+    "vite-plugin-solid": "npm:vite-plugin-solid@^2.10.2"
+  }
+}
